@@ -6,39 +6,39 @@ export default function Footer() {
     <footer className="relative mt-20 bg-white/60 backdrop-blur-lg border-t border-white/30">
       
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-6 py-12
         grid gap-10
         grid-cols-1
         sm:grid-cols-2
         md:grid-cols-4
-        text-sm text-gray-700
-      ">
+        text-sm text-gray-700"
+      >
         {/* Brand */}
-<div className="text-center sm:text-left">
-  <Link href="/" className="inline-flex items-start gap-2">
-    <Image
-      src="/favicon.ico"
-      alt="Sarkari Photo Tool Logo"
-      width={32}
-      height={32}
-    />
+        <div className="text-center sm:text-left">
+          <Link href="/" className="inline-flex items-start gap-2">
+            <Image
+              src="/favicon.ico"
+              alt="Sarkari Photo Tool Logo"
+              width={32}
+              height={32}
+            />
 
-    <div className="flex flex-col leading-tight">
-      <h3 className="text-2xl font-extrabold text-gradient">
-        Sarkari Photo Tool
-      </h3>
-      <span className="text-[10px] text-gray-500 italic">
-        Photo & Signature Resize Tool
-      </span>
-    </div>
-  </Link>
+            <div className="flex flex-col leading-tight">
+              <h3 className="text-2xl font-extrabold text-gradient">
+                Sarkari Photo Tool
+              </h3>
+              <span className="text-[10px] text-gray-500 italic">
+                Photo & Signature Resize Tool
+              </span>
+            </div>
+          </Link>
 
-  <p className="mt-4 text-gray-600 leading-relaxed max-w-xs mx-auto sm:mx-0">
-    Free online tools to resize photo & signature for government exam forms
-    like SSC, UPSC, IBPS, Railway & more.
-  </p>
-</div>
-
+          <p className="mt-4 text-gray-600 leading-relaxed max-w-xs mx-auto sm:mx-0">
+            Free online tools to resize photo & signature for government exam
+            forms like SSC, UPSC, IBPS, Railway & more.
+          </p>
+        </div>
 
         {/* Tools */}
         <div>
@@ -74,7 +74,7 @@ export default function Footer() {
             {[
               ["SSC Photo Size", "/blogs/ssc-photo-signature-size"],
               ["UPSC Photo Size", "/blogs/upsc-photo-signature-size"],
-              ["Railway", "/blogs/railway-photo-signature-size"],
+              ["Railway Photo Size", "/blogs/railway-photo-signature-size"],
             ].map(([label, link]) => (
               <li key={label}>
                 <Link
@@ -114,25 +114,50 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-<div className="border-t border-white/30 py-4 px-4 mb-10">
-  <p className="text-center text-xs sm:text-sm text-gray-600 leading-relaxed">
-    © {new Date().getFullYear()}{" "}
-    <span className="font-semibold text-gradient">Sarkari Photo Tool</span>.  
-    All rights reserved.
-    <span className="hidden sm:inline mx-2">|</span>
-    <span className="block sm:inline">
-      Designed &amp; Maintained by{" "}
-      <a
-        href="mailto:viktechz@example.com"
-        className="text-blue-500 hover:text-blue-600 font-semibold"
-        aria-label="Email VIKTECHZ"
-      >
-        VIKTECHZ
-      </a>
-    </span>
-  </p>
-</div>
+      <div className="border-t border-white/30 py-4 px-4">
+        <p className="text-center text-xs sm:text-sm text-gray-600 leading-relaxed">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-semibold text-gradient">
+            Sarkari Photo Tool
+          </span>
+          . All rights reserved.
+          <span className="hidden sm:inline mx-2">|</span>
+          <span className="block sm:inline">
+            Designed &amp; Maintained by{" "}
+            <a
+              href="mailto:viktechz@example.com"
+              className="text-blue-500 hover:text-blue-600 font-semibold"
+              aria-label="Email VIKTECHZ"
+            >
+              VIKTECHZ
+            </a>
+          </span>
+        </p>
+      </div>
 
+      {/* Disclaimer */}
+      <div className="px-4 pb-10">
+        <p className="max-w-5xl mx-auto text-center text-[11px] sm:text-xs text-gray-500 leading-relaxed">
+          <strong>Disclaimer:</strong> Sarkari Photo Tool is a{" "}
+          <span className="font-medium">
+            private, independent utility website
+          </span>{" "}
+          and is{" "}
+          <span className="font-medium">
+            not affiliated with any Government of India department
+          </span>
+          . This website only provides photo and signature resizing tools based
+          on{" "}
+          <span className="font-medium">
+            publicly available exam guidelines
+          </span>
+          . We do{" "}
+          <span className="font-medium">
+            not collect, store, or share any personal data
+          </span>
+          .
+        </p>
+      </div>
     </footer>
   );
 }

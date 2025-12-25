@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "Sarkari Photo Tool",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <main className="flex-1 relative z-10">{children}</main>
         <Footer />
         </LanguageProvider>
+        <Analytics/>
       </body>
     </html>
   );
