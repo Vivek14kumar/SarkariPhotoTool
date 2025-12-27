@@ -15,6 +15,18 @@ export default function FAQClient() {
         "Signature size usually ranges between 10KB–50KB in JPG/JPEG format with a white background. Exact size depends on the exam.",
     },
     {
+      question: "What is the IGNOU photo size for 2026 admission?",
+      answer:"Photo size should be between 20 KB to 100 KB in JPG/JPEG format.",
+    },
+    {
+      question:"Is signature compulsory for IGNOU?",
+      answer:"Yes, signature upload is mandatory for most IGNOU forms.",
+    },
+    {
+      question:"Can I edit my photo after form submission?",
+      answer:"No. Always upload the correct size photo & signature."
+    },
+    {
       question: "Can I resize photo and signature online for free?",
       answer:
         "Yes. Sarkari Photo Tool allows free online photo and signature resizing without watermark or signup.",

@@ -110,4 +110,9 @@ export const examRules = {
     photo: { minKB: 10, maxKB: 200, width: 200, height: 230, bg: "white" },
     sign: { minKB: 10, maxKB: 200 },
   },
+  ignou: {
+    name: "IGNOU",
+    photo: { minKB: 10, maxKB: 200, width: 200, height: 230, bg: "white" },
+    sign: { minKB: 4, maxKB: 30 },
+  },
 };
