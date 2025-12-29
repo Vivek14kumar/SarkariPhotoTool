@@ -26,6 +26,16 @@ export const metadata = {
     "sarkari exam photo resize",
     "ExamMint Resize",
     "canva",
+    "BPSC TRE 4 photo size",
+    "BPSC TRE 4 signature size",
+    "BPSC teacher photo upload",
+    "BPSC TRE image resize",
+    "BPSC online form photo problem",
+    "IGNOU photo size 2026",
+    "IGNOU signature size",
+    "IGNOU photo upload problem",
+    "Resize IGNOU photo online",
+    "IGNOU admission photo requirements",
   ],
   };
 

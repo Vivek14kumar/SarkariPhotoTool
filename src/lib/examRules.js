@@ -115,4 +115,19 @@ export const examRules = {
     photo: { minKB: 10, maxKB: 200, width: 200, height: 230, bg: "white" },
     sign: { minKB: 4, maxKB: 30 },
   },
+  bpsc: {
+  name: "BPSC TRE 4",
+  photo: {
+    minKB: 20,
+    maxKB: 50,
+    width: 200,
+    height: 230,
+    bg: "White",
+  },
+  sign: {
+    minKB: 10,
+    maxKB: 20,
+  },
+},
+
 };

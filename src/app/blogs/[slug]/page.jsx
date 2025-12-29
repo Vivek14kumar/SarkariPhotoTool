@@ -8,6 +8,11 @@ export function generateStaticParams() {
   }));
 }
 
+function getRelatedExams(currentKey) {
+  return Object.entries(examRules)
+    .filter(([key]) => key !== currentKey)
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params; // ✅ FIX
   if (!slug) return {};
@@ -137,6 +142,34 @@ export default async function BlogPage({ params }) {
           <li>Background: {exam.photo.bg}</li>
         </ul>
       </section>
+      {exam.name === "BPSC TRE 4" && (
+  <section className="rounded-2xl bg-yellow-50 border-l-4 border-yellow-500 p-6">
+    <h2 className="text-2xl font-semibold mb-3">
+      BPSC TRE 4 Photo & Signature Guidelines
+    </h2>
+
+    <p className="text-gray-700 leading-relaxed">
+      Bihar Public Service Commission (BPSC) has released the notification for
+      <strong> Teacher Recruitment Exam (TRE 4)</strong>. Candidates applying
+      online must upload their photograph and signature as per BPSC norms.
+      Any incorrect image size, format, or background may lead to rejection
+      of the application form.
+    </p>
+
+    <ul className="list-disc ml-6 mt-4 text-gray-700">
+      <li>Recent passport-size color photograph required</li>
+      <li>White or light background only</li>
+      <li>Face should be clearly visible without cap or sunglasses</li>
+      <li>Signature must be done with black or blue pen</li>
+      <li>Upload images in JPG/JPEG format only</li>
+    </ul>
+
+    <p className="mt-4 text-gray-700">
+      Use our <strong>free BPSC TRE 4 photo & signature resizer</strong> to
+      instantly adjust size, dimensions, and file KB without losing quality.
+    </p>
+  </section>
+)}
 
       {/* Signature */}
       {exam.sign && (
@@ -163,6 +196,22 @@ export default async function BlogPage({ params }) {
           Resize {exam.name} Photo Now
         </a>
       </div>
+
+      {/* Related Exams (Auto) */}
+<div className="text-center text-sm text-gray-600 mt-8">
+  <span className="font-medium">Related Exams:</span>{" "}
+  {getRelatedExams(key).map(([examKey, examData], index) => (
+    <span key={examKey}>
+      <a
+        href={`/blogs/${examKey}-photo-signature-size`}
+        className="text-blue-600 hover:underline"
+      >
+        {examData.name}
+      </a>
+      {index < getRelatedExams(key).length - 1 && " | "}
+    </span>
+  ))}
+</div>
 
       {/* Breadcrumb Schema */}
       <script
