@@ -57,6 +57,15 @@ export default async function BlogPage({ params }) {
         </p>
       </header>
       
+      {/* Last Updated */}
+  <p className="text-sm text-gray-500">
+    Last Updated: {new Date().toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    })}
+  </p>
+  
 {/* Quick Overview Table */}
 <section className="overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-md">
   <table className="w-full text-sm md:text-base">

@@ -23,6 +23,14 @@ export default function FAQClient() {
       answer:"Yes, signature upload is mandatory for most IGNOU forms.",
     },
     {
+      question:"What photo size is required for BPSC?",
+      answer:"20–50 KB JPG with white background.",
+    },
+    {
+      question:"Can mobile photo be used?",
+      answer:"Yes, if it meets size & background requirements.",
+    },
+    {
       question:"Can I edit my photo after form submission?",
       answer:"No. Always upload the correct size photo & signature."
     },

@@ -5,7 +5,7 @@ import { FaUserGraduate, FaUniversity, FaIdCard, FaSchool, FaCertificate } from 
 export const metadata = {
   title: "Government Photo & Signature Size Guides (All Exams)",
   description:
-    "Check photo and signature size for SSC, UPSC, Railway, Aadhaar, PAN card. Resize online instantly.",
+    "Check photo and signature size for SSC, UPSC, BPSC, Railway, Aadhaar, PAN card. Resize online instantly.",
 };
 
 // Mapping exam slugs to icons (you can add more)
