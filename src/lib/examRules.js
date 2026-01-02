@@ -129,5 +129,20 @@ export const examRules = {
     maxKB: 20,
   },
 },
+biharPoliceHavaldar: {
+  name: "Bihar Police Havaldar 2026",
+  photo: {
+    minKB: 20,
+    maxKB: 50,
+    width: 200,
+    height: 230,
+    bg: "White",
+  },
+  sign: {
+    minKB: 10,
+    maxKB: 20,
+  },
+},
+
 
 };
