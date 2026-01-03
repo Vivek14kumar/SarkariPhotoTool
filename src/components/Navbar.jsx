@@ -52,7 +52,7 @@ export default function Navbar() {
   />
 
   <div className="flex flex-col leading-tight">
-    <h1 className="text-2xl font-extrabold text-gradient">
+    <h1 className="text-xl font-extrabold text-gradient">{/*text-2xl*/}
       <Link href="/">Sarkari Photo Tool</Link>
     </h1>
     <p className="text-[10px] text-gray-500 italic animate-fade-in">

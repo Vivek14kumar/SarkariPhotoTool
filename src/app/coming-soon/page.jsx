@@ -11,7 +11,7 @@ export default function ComingSoonPage() {
         
         {/* Logo / Brand */}
         <h1 className="text-3xl font-bold text-white">
-          GovForm Tools
+          Sarkari Photo Tool
         </h1>
 
         {/* Divider */}
@@ -52,10 +52,10 @@ export default function ComingSoonPage() {
           </div>
         </div>
 
-        {/* Footer */}
+        {/* Footer 
         <p className="mt-8 text-xs text-white/70">
           © {new Date().getFullYear()} GovForm Tools. All rights reserved.
-        </p>
+        </p>*/}
       </div>
     </div>
   );
