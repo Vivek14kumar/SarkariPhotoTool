@@ -2,6 +2,7 @@ import ToolCard from "@/components/ToolCard";
 import FAQPage from "./faq/page";
 import TrustStats from "./TrustStats/page";
 import VisitExamNotifications from "./VisitExamNotifications/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-24 text-center">
+        <div className="relative max-w-7xl mx-auto px-6 py-10 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
             Sarkari Exam Form <br />
             <span className="text-yellow-300">
@@ -24,20 +25,33 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            <a
+            <Link
               href="/photo-resizer"
               className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
               Start Resizing 🚀
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#tools"
               className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition"
             >
               View Tools
-            </a>
+            </Link>
           </div>
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/bulk-resizer"
+              className="inline-flex items-center gap-2 px-6 py-3 
+              rounded-full font-bold text-white 
+              bg-gradient-to-r from-yellow-400 to-orange-500
+              shadow-lg hover:scale-105 transition"
+            >
+              ⚡ Bulk Photo Resize
+              <span className="text-xl">→</span>
+            </Link>
+          </div>
+
         </div>
       </section>
 
