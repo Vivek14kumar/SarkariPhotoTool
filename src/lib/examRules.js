@@ -143,6 +143,21 @@ biharPoliceHavaldar: {
     maxKB: 20,
   },
 },
-
+uppoliceconstable: {
+  name: "UP Police Constable 2026",
+  photo: {
+    minKB: 20,
+    maxKB: 50,
+    width: 200,
+    height: 230,
+    bg: "White",
+  },
+  sign: {
+    minKB: 10,
+    maxKB: 20,
+    width: 140,
+    height: 60,
+  },
+},
 
 };

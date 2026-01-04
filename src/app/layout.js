@@ -36,6 +36,11 @@ export const metadata = {
     "IGNOU photo upload problem",
     "Resize IGNOU photo online",
     "IGNOU admission photo requirements",
+    "UP Police Constable 2026 photo size",
+    "UP Police Constable signature size",
+    "UP Police photo and signature guidelines",
+    "UP Police Constable image size",
+    "UP Police online form photo size",
   ],
   };
 

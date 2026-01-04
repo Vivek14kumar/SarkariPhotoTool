@@ -64,6 +64,14 @@ export default function FAQClient() {
       answer:
         "Yes, Aadhaar and PAN card photos follow document-specific guidelines.",
     },
+    {
+      question:"What should be the photo size for UP Police Constable 2026?",
+      answer:"The candidate’s photograph should be 180 × 225 pixels (approx.), in JPG/JPEG format, and the file size should be between 20 KB to 50 KB.",
+    },
+    {
+      question:"Will a signature below 5 KB be accepted?",
+      answer:"Yes, in most cases the UP Police portal accepts signatures below 5 KB if the dimensions (140×60 px) are correct and the signature is clear.",
+    },
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
